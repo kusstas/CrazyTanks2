@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Исходные файлы\Engine">
+      <UniqueIdentifier>{421a2859-c5b5-475f-9e57-3a55c7f87c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Engine">
+      <UniqueIdentifier>{0059af5b-1a85-47dc-8d97-bae8e366ed1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Engine\GameObjects">
+      <UniqueIdentifier>{2918bfbb-b027-4a75-bc26-8da1e4958966}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Engine\GameObjects">
+      <UniqueIdentifier>{13774282-1b43-40b9-884a-5ae0285f2522}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Engine\MathTypes">
+      <UniqueIdentifier>{93f5dfe2-be72-48af-997d-92d53b068193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Engine\Draw">
+      <UniqueIdentifier>{ee2ce2ea-92db-4099-8787-f229ef88f187}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\Engine\Draw">
+      <UniqueIdentifier>{630fa2b3-b468-4ce4-b540-abd5993adbac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Исходные файлы\CrazyTanks">
+      <UniqueIdentifier>{e7f28918-3547-415e-ab4d-fd89f47aa663}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\CrazyTanks">
+      <UniqueIdentifier>{38ba756a-63da-4036-b165-38aa3d5d97c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы заголовков\Engine\Interfaces">
+      <UniqueIdentifier>{115bfc20-45e7-49cf-a06f-61ef6f4fab81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>Исходные файлы\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="Pixel.cpp">
+      <Filter>Исходные файлы\Engine\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsConsoleScreen.cpp">
+      <Filter>Исходные файлы\Engine\Draw</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Исходные файлы\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="CrazyTanks.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldTanks.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="Tank.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="Wall.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Исходные файлы\Engine\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Projectile.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerTank.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyTank.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="AiController.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="SecureWall.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="Gold.cpp">
+      <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="World.h">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreMinimal.h">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Файлы заголовков\Engine\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector2D.h">
+      <Filter>Файлы заголовков\Engine\MathTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="RotationZ.h">
+      <Filter>Файлы заголовков\Engine\MathTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="Pixel.h">
+      <Filter>Файлы заголовков\Engine\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Screen.h">
+      <Filter>Файлы заголовков\Engine\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsConsoleScreen.h">
+      <Filter>Файлы заголовков\Engine\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Файлы заголовков\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="CrazyTanks.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldTanks.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="Tank.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="Wall.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="Projectile.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerTank.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyTank.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="AiController.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="IDamaged.h">
+      <Filter>Файлы заголовков\Engine\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SecureWall.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+    <ClInclude Include="Gold.h">
+      <Filter>Файлы заголовков\CrazyTanks</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
