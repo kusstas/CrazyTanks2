@@ -10,7 +10,7 @@ Gold::Gold(World& world) : GameObject(world)
 {
     instance_ = this;
 
-    maxLives_ = 9;
+    maxLives_ = 1;
     lives_ = 0;
 }
 
@@ -26,9 +26,7 @@ void Gold::beginPlay()
 
 Pixel Gold::getDrawing() const
 {
-    Pixel p('0', COLOR_BLACK, COLOR_YELLOW);
-    p.setSymbol(lives_ + '0');
-    return p;
+    return Pixel (' ', COLOR_BLACK, COLOR_YELLOW);
 }
 
 void Gold::applyDamage(GameObject& initiator)
