@@ -24,10 +24,12 @@ public:
     virtual void onOverstepBorder();
 
     static int getCount();
+    static int getTeam();
 
 private:
 
     static int count;
+    static int team_;
 
     AiController* aiController_;
 };

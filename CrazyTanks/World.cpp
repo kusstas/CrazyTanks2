@@ -113,18 +113,23 @@ GameObject* World::getGameObjectFromLocation(int x, int y)
 
 GameObject* World::trace(DVector2D start, RotationZ direct, int distance)
 {
+    return trace(start, direct, distance, [](GameObject& obj) { return true; });
+}
+
+GameObject* World::trace(DVector2D start, RotationZ direct, int distance,
+    std::function<bool(GameObject& obj)> validate)
+{
     DVector2D vDirect = GameObject::getVector2DFromDirect(direct);
 
     for (int i = 1; i <= distance; i++)
     {
         DVector2D loc = vDirect * i;
         loc += start;
-        GameObject* goRes = getGameObjectFromLocation(loc);
+        GameObject* go = getGameObjectFromLocation(loc);
 
-        if (goRes != nullptr)
-            return goRes;
+        if (go != nullptr && validate(*go))
+            return go;
     }
-
     return nullptr;
 }
 
@@ -161,7 +166,6 @@ void World::handleCollision()
                 if (intersect)
                 {
                     go1->onOverlap(*go2, go1->getLocation());
-                    go2->onOverlap(*go1, go2->getLocation());
 
                     if (block)
                         go1->setLocation(go1->getPrevLocation());

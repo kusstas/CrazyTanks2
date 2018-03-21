@@ -24,9 +24,12 @@ private:
     float timerChange;
     float timerReact;
     float timerDamageEffect;
+    int maxDistanceCheck;
 
     void changeDirect();
     void checkEnemy();
+    void handleFire(float deltaTime);
+    void handleMove(float deltaTime);
 
     bool shouldFire_;
     bool damageEffect;

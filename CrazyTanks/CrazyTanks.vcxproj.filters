@@ -78,9 +78,6 @@
     <ClCompile Include="Projectile.cpp">
       <Filter>Исходные файлы\CrazyTanks</Filter>
     </ClCompile>
-    <ClCompile Include="Controller.cpp">
-      <Filter>Исходные файлы\CrazyTanks</Filter>
-    </ClCompile>
     <ClCompile Include="PlayerController.cpp">
       <Filter>Исходные файлы\CrazyTanks</Filter>
     </ClCompile>
@@ -98,6 +95,9 @@
     </ClCompile>
     <ClCompile Include="Gold.cpp">
       <Filter>Исходные файлы\CrazyTanks</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Исходные файлы\Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

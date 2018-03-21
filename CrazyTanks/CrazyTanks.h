@@ -18,6 +18,8 @@ private:
     bool isLose_;
     bool isWin_;
 
+    bool isPlay_;
+
 };
 
 #endif // !CRAZY_TANKS_H

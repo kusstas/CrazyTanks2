@@ -8,6 +8,7 @@
 #include "Pixel.h"
 
 int EnemyTank::count = 0;
+int EnemyTank::team_ = 1;
 
 EnemyTank::EnemyTank(World& world) : Tank(world)
 {
@@ -15,7 +16,7 @@ EnemyTank::EnemyTank(World& world) : Tank(world)
 
     maxCoolDown = 0.8f;
     maxDurationMove = 0.25f;
-    indexTeam_ = 1;
+    indexTeam_ = getTeam();
 
     controller_ = new AiController();
 }
@@ -66,4 +67,9 @@ void EnemyTank::onOverstepBorder()
 int EnemyTank::getCount()
 {
     return count;
+}
+
+int EnemyTank::getTeam()
+{
+    return team_;
 }

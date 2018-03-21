@@ -1,6 +1,8 @@
 // CrazyTanks game, @kusstas 2018. All Rights Reserved.
 
 #include "Gold.h"
+#include "Projectile.h"
+#include "PlayerTank.h"
 
 #include "Pixel.h"
 
@@ -31,9 +33,17 @@ Pixel Gold::getDrawing() const
 
 void Gold::applyDamage(GameObject& initiator)
 {
-    lives_--;
-    if (lives_ == 0)
-        destroy();
+    Projectile* p = dynamic_cast<Projectile*>(&initiator);
+
+    if (p != nullptr)
+    {
+        if (p->getIndexTeam() != PlayerTank::getTeam())
+        {
+            lives_--;
+            if (lives_ == 0)
+                destroy();
+        }
+    }
 }
 
 const Gold* Gold::getInstance()

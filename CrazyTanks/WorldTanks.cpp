@@ -159,10 +159,13 @@ void WorldTanks::generateTanks()
 
     DVector2D loc;
 
-    for (int i = 0; i < 2; i++)
+    for (int i = 0; i < 3; i++)
     {
         for (int j = 0; j < 2; j++)
-        {    
+        {   
+            if (j == 1 && i == 1)
+                continue;
+
             loc.x = (rand() % (stepX - 1)) + stepX * i;
             loc.y = (rand() % (stepY - 1)) + stepY * j;
 
@@ -171,8 +174,8 @@ void WorldTanks::generateTanks()
         }
     }
 
-    loc.x = (rand() % (stepX - 1)) + stepX * 2;
-    loc.y = (rand() % (stepY - 1)) + stepY * 2;
+    loc.x = Gold::getInstance()->getLocation().x;
+    loc.y = Gold::getInstance()->getLocation().y - 3;
 
     Tank* t = createGameObject<PlayerTank>();
     t->setLocation(loc);

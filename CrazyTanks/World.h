@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <type_traits>
+#include <functional>
 
 using namespace std;
 
@@ -36,6 +37,8 @@ public:
     GameObject* getGameObjectFromLocation(int x, int y);
 
     GameObject* trace(DVector2D start, RotationZ direct, int distance);
+    GameObject* trace(DVector2D start, RotationZ direct, int distance, 
+        std::function<bool(GameObject& obj)> validate);
 
     template <class T>
     T* createGameObject();

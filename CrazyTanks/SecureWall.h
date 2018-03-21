@@ -8,7 +8,9 @@
 class SecureWall : public Wall
 {
 public:
+
     SecureWall(World& world);
+    virtual void applyDamage(GameObject& initiator) override;
 };
 
 #endif // !SECURE_WALL_H

@@ -13,10 +13,13 @@ public:
     ~PlayerTank();
 
     static const PlayerTank* getInstance();
+    static int getTeam();
 
 private:
 
     static PlayerTank* instance;
+    static int team_;
+ 
 };
 
 #endif // !PLAYER_TANK_H
